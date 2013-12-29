@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "台語兒",
+  "description": "台語兒是一隻台語語音朗讀精靈，協助您用台語聆聽網頁的文字！",
+  "icons": {
+      "128": "img/TaiwaneseWizard_logo.png",
+      "48": "img/TaiwaneseWizard_logo.png",
+      "16": "img/TaiwaneseWizard_logo.png"
+  },
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["core.js"]
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "http://tts.itri.org.tw/php/*"
+  ]
+}

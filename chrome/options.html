@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+ <head>
+  <title>台語兒 - 設定</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" content="BaconBao">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <link rel="stylesheet" type="text/css" href="lib/css/semantic.min.css">
+  <script src="lib/javascript/jquery.min.js"></script>
+  <script src="options.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 98%;
+      background: linear-gradient(rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.01) 95%) no-repeat scroll 0 0%, url("img/white_wall_hash.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    body {
+      padding-top: 20px;
+    }
+    #mainbox {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    #infobox {
+      color: #3CB917;
+    }
+    .range-input {
+      width: 400px;
+    }
+    .valuespan {
+      margin-left: 15px;
+    }
+  </style>
+ </head>
+ <body>
+  <div id="mainbox">
+    <h1><img src="img/TaiwaneseWizard_logo.png" style="width:25px;" /> 台語兒設定</h1>
+    <div class="ui divider"></div>
+    <br />
+    <section>
+      <h4>類型</h4>
+      <input id="v0a" type="radio" name="voiceStyle" value="TW_LIT_AKoan" /> <label>文讀台</label> <input id="v0b" type="radio" name="voiceStyle" value="TW_SPK_AKoan" /> <label>白話台</label>
+    </section>
+    <br />
+    <section>
+      <h4>音量</h4>
+      <input id="v1" type="range" class="range-input" min="0" max="100" step="1" tarSpan="#s1" /><span id="s1" class="valuespan"></span>
+    </section>
+    <br />
+    <section>
+      <h4>說話速度</h4>
+      <input id="v2" type="range" class="range-input" min="-10" max="10" step="1" tarSpan="#s2" /><span id="s2" class="valuespan"></span>
+    </section>
+    <br />
+    <section>
+      <h4>說話音高</h4>
+      <input id="v3" type="range" class="range-input" min="-10" max="10" step="1" tarSpan="#s3" /><span id="s3" class="valuespan"></span>
+    </section>
+    <br />
+    <section>
+      <h4>語調強度</h4>
+      <input id="v4" type="range" class="range-input" min="0" max="20" step="1" tarSpan="#s4" /><span id="s4" class="valuespan"></span>
+    </section>
+    <br />
+    <br />
+    <div id="btn-save" class="ui button green"><i class="icon check"></i> 儲存設定</div> <div id="btn-again" class="ui button teal small"><i class="icon remove"></i> 重新整理</div> <div id="btn-reboot" class="ui button orange small"><i class="icon exclamation"></i> 回復預設</div>
+    <div id="infobox"></div>
+  </div>
+ </body>
+</html>
