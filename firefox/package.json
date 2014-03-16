@@ -1,0 +1,19 @@
+{
+"version": "1.0",
+"icon": "data/img/TaiwaneseWizard_logo.png",
+"name": "taiwanesewizard",
+"fullName": "台語兒",
+"id": "taiwanesewizard@baconbao",
+"description": "台語兒是一隻台語語音朗讀精靈，協助您用台語聆聽網頁的文字！",
+"homepage": "http://baconbao.blogspot.com",
+"lib": "lib",
+"main": "main",
+"author": "BaconBao",
+"url": "http://baconbao.blogspot.com",
+"license": "MPL 2.0",
+"contributors": [],
+"dependencies": ["api-utils", "addon-kit"],
+"permissions": {
+    "cross-domain-content": ["http://tts.itri.org.tw/php/"]
+}
+}

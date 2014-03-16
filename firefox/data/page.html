@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+ <head>
+  <title>台語兒</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" content="BaconBao">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <link rel="stylesheet" type="text/css" href="lib/css/semantic.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 98%;
+      background: linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%) no-repeat scroll 0 0%, url("img/white_wall_hash.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    body{
+      padding-top: 20px;
+    }
+    #box {
+    	max-width: 750px;
+    	margin: 0 auto;
+    }
+    #text2say {
+      font-size: 27px;
+      font-family: 'Microsoft JhengHei','微軟正黑體';
+    }
+    #logo {
+      width: 200px;
+      margin: 0 auto;
+      -moz-transform: rotateY(0deg) rotateX(0deg);
+      cursor: pointer;
+    }
+    #face {
+      font-weight: bold;
+      font-size: 30px;
+      position: absolute;
+      top: 125px;
+      left: 70px;
+    }
+    #foot {
+      margin-top: 50px;
+      text-align: center;
+      color: #999;
+    }
+    #foot a {
+      color: #999;
+    }
+    #foot a:hover {
+      color: #000;
+    }
+    #go2option {
+      border: 1px solid;
+      border-radius: 3px;
+      padding: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    #go2option:hover {
+      background: #ccc;
+      color: #000;
+    }
+    .arrow-down {
+      width: 0; 
+      height: 0; 
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;      
+      border-top: 20px solid #fff;
+      margin: 0 auto;
+    }
+  </style>
+ </head>
+ <body>
+ 	<div id="box" class="ui segment">
+ 		<div id="text2say"></div>
+ 	</div>
+  <div class="arrow-down"></div>
+  <div id="logo"><img src="img/faceBackground.png" style="width:100%;" title="聽聽台語兒說說！" /><span id="face">^ _ ^</span></div>
+  <audio id="ttsplayer" preload="auto" autoplay></audio>
+  <div id="foot">台語兒 <small><a id="go2option" href="options.html" target="_blank"><i class="setting icon"></i> 設定 </a></small><br /><br /><small>版本：<span id="version"></span>&nbsp;&nbsp;|&nbsp;&nbsp;作者：<a href="http://baconbao.com" target="_blank">BaconBao</a>&nbsp;&nbsp;|&nbsp;&nbsp;TTS語音來自：<a href="http://tts.itri.org.tw/" target="_blank">工研院文字轉語音Web服務</a></small></div>
+ </body>
+</html>
