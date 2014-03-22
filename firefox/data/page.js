@@ -5,7 +5,7 @@
 self.port.on("tmpText", function(selectionText){
 
 	/*--- Version Code ---*/
-	var versionCode = '1.0';
+	var versionCode = '1.01';
 	$('#version').text(versionCode);
 
 	/*--- Page Start ---*/
@@ -82,13 +82,13 @@ function stratTTS_first(text){
 	var pitchLevel = localStorage["setting-pitchlevel"];
 	var pitchSign = 0;
 	var pitchScale = localStorage["setting-pitchscale"];
-	var format = "wav";
 	var cache = new Date().getTime();
 	var key = "81*26*3A*3C1*26*3A*2A*14*2Aefgefg";
 	$.ajax({
-		url: "http://tts.itri.org.tw/"+"php/webtts.php?t=4&w="+text+"&m="+speaker+"&v="+volume+"&s="+speed+"&pl="+pitchLevel+"&psi="+pitchSign+"&psc="+pitchScale+"&f="+format+"&idx="+cache+"&k="+key+"&cache="+new Date().getTime(),
+		url: "http://tts.itri.org.tw/php/webtts.php?t=4&f=wav&w="+text+"&m="+speaker+"&v="+volume+"&s="+speed+"&pl="+pitchLevel+"&psi="+pitchSign+"&psc="+pitchScale+"&idx="+cache+"&k="+key,
 		type: 'GET',
-		dataType: 'html',
+		dataType: 'text',
+		jsonp: false,
 		success: function(data){
 			var tmpTextNum1 = data.indexOf('resultConvertID');
 			var tmpTextNum2 = data.indexOf("=", tmpTextNum1);
@@ -98,9 +98,10 @@ function stratTTS_first(text){
 			var startTTS_second;
 			startTTS_second = setInterval(function(){
 				$.ajax({
-					url: "http://tts.itri.org.tw/php/webtts.php?t=3&i="+convertId+"&idx="+cache+"&k="+key+"&cache="+new Date().getTime(),
+					url: "http://tts.itri.org.tw/php/webtts.php?t=3&i="+convertId+"&idx="+cache+"&k="+key,
 					type: 'GET',
-					dataType: 'html',
+					dataType: 'text',
+					jsonp: false,
 					success: function(data){
 						var tmpDataNum1 = data.indexOf('resultUrl');
 						var tmpDataNum2 = data.indexOf("=", tmpDataNum1);
@@ -112,9 +113,10 @@ function stratTTS_first(text){
                         	$('#face').text('x _ x');
                         	alert('抱歉，此語句台語兒不會說...');
 			                $.ajax({
-								url: "http://tts.itri.org.tw/php/whenerrorsendmail.php?cache=" +new Date().getTime(),
+								url: "http://tts.itri.org.tw/php/whenerrorsendmail.php?cache="+new Date().getTime(),
 								type: 'GET',
-								dataType: 'html',
+								dataType: 'text',
+								jsonp: false,
 								success: function(data){}
 							});         
                         }
