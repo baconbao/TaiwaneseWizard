@@ -50,7 +50,7 @@ function stratTTS_first(text){
                         if(times == 60){
                         	clearInterval(startTTS_second);
                         	$('#face').text('x _ x');
-                        	alert('抱歉，此語句台語兒不會說...');
+                        	alert('抱歉，可能服務正在維護中，或是此語句台語兒不會說...');
 			                $.ajax({
 								url: "http://tts.itri.org.tw/php/whenerrorsendmail.php?cache=" +new Date().getTime(),
 								type: 'GET',

@@ -7,7 +7,7 @@
       "48": "img/TaiwaneseWizard_logo.png",
       "16": "img/TaiwaneseWizard_logo.png"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "background": {
     "scripts": ["core.js"]
   },
