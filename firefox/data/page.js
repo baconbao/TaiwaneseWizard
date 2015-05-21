@@ -5,7 +5,7 @@
 self.port.on("tmpText", function(selectionText){
 
 	/*--- Version Code ---*/
-	var versionCode = '1.02';
+	var versionCode = '1.03';
 	$('#version').text(versionCode);
 
 	/*--- Page Start ---*/
