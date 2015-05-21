@@ -5,7 +5,7 @@
 self.port.on("tmpText", function(selectionText){
 
 	/*--- Version Code ---*/
-	var versionCode = '1.01';
+	var versionCode = '1.02';
 	$('#version').text(versionCode);
 
 	/*--- Page Start ---*/
@@ -83,7 +83,7 @@ function stratTTS_first(text){
 	var pitchSign = 0;
 	var pitchScale = localStorage["setting-pitchscale"];
 	var cache = new Date().getTime();
-	var key = "81*26*3A*3C1*26*3A*2A*14*2Aefgefg";
+	var key = "<YOUR_ITRI_TTS_KEY>"; // !important: Change this for your ITRI TTS key, get key here: http://tts.itri.org.tw
 	$.ajax({
 		url: "http://tts.itri.org.tw/php/webtts.php?t=4&f=wav&w="+text+"&m="+speaker+"&v="+volume+"&s="+speed+"&pl="+pitchLevel+"&psi="+pitchSign+"&psc="+pitchScale+"&idx="+cache+"&k="+key,
 		type: 'GET',
@@ -111,7 +111,7 @@ function stratTTS_first(text){
                         if(times == 60){
                         	clearInterval(startTTS_second);
                         	$('#face').text('x _ x');
-                        	alert('抱歉，此語句台語兒不會說...');
+                        	alert('抱歉，可能服務正在維護中，或是此語句台語兒不會說...');
 			                $.ajax({
 								url: "http://tts.itri.org.tw/php/whenerrorsendmail.php?cache="+new Date().getTime(),
 								type: 'GET',

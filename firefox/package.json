@@ -1,5 +1,5 @@
 {
-"version": "1.01",
+"version": "1.02",
 "icon": "data/img/TaiwaneseWizard_logo.png",
 "name": "taiwanesewizard",
 "fullName": "台語兒",
@@ -17,3 +17,4 @@
     "cross-domain-content": ["http://tts.itri.org.tw/php/"]
 }
 }
+
