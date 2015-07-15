@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 98%;
+  background: linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%) no-repeat scroll 0 0%, url("img/white_wall_hash.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+body{
+  padding-top: 20px;
+}
+#box {
+	max-width: 750px;
+	margin: 0 auto;
+}
+#text2say {
+  font-size: 27px;
+  font-family: 'Microsoft JhengHei','微軟正黑體';
+}
+#logo {
+  width: 200px;
+  margin: 0 auto;
+  -moz-transform: rotateY(0deg) rotateX(0deg);
+  cursor: pointer;
+}
+#face {
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 125px;
+  left: 70px;
+}
+#foot {
+  margin-top: 20px;
+  text-align: center;
+  color: #999;
+}
+#foot a {
+  color: #999;
+}
+#foot a:hover {
+  color: #000;
+}
+#downloadBox {
+  color: #444;
+  text-align: center;
+  padding: 45px 0px;
+  font-family: 'Microsoft JhengHei','微軟正黑體';
+}
+#downloadBox a {
+  color: #444;
+}
+#thanks {
+  color: #999;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Microsoft JhengHei','微軟正黑體';
+}
+#thanks img {
+  width: 50px;
+  opacity: 0.5;
+}
+#thanks img:hover {
+  opacity: 1;
+}
+.mybtn {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mybtn:hover {
+  background: #ccc;
+  color: #000;
+  border: 1px solid #333;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;      
+  border-top: 20px solid #fff;
+  margin: 0 auto;
+}
+.icon-chrome {
+  background: url(img/icon_chrome.png) no-repeat;
+  background-position: center center;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  text-indent: -10000px;
+  opacity: 0.8;
+}
+.icon-firefox {
+  background: url(img/icon_firefox.png) no-repeat;
+  background-position: center center;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  text-indent: -10000px;
+  opacity: 0.9;
+}
+@media only screen and (max-width:750px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width:500px) {
+  .mybtn {
+    display: block;
+  }
+}
