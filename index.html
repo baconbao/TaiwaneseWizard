@@ -31,15 +31,15 @@
     <div id="text2say">台語兒是一隻會台語朗讀的語音精靈，協助您以台語聆聽網頁的文字，同時也可以是您學習台語的好夥伴喔！</div>
   </div>
   <div class="arrow-down"></div>
-  <div id="logo" onClick="_gaq.push(['_trackEvent', 'player', 'play', 'click', 'click'])"><img src="img/faceBackground.png" style="width:100%;" title="聽聽台語兒說說！" /><span id="face">^ _ ^</span></div>
+  <div id="logo" onClick="ga('send', 'event', 'player', 'play', 'click')"><img src="img/faceBackground.png" style="width:100%;" title="聽聽台語兒說說！" /><span id="face">^ _ ^</span></div>
   <audio id="ttsplayer" preload="auto"></audio>
   <div id="downloadBox">
-    <a class="mybtn" href="https://chrome.google.com/webstore/detail/%E5%8F%B0%E8%AA%9E%E5%85%92/kckmkinefemhpfnilhkkipfaofenfoja" target="_blank" onClick="_gaq.push(['_trackEvent', 'button', 'download', 'dl_chrome', 'dl_chrome'])"><span class="icon-chrome">&nbsp;</span> 取得 Chrome 版本</a>&nbsp;&nbsp;<a class="mybtn" href="https://addons.mozilla.org/zh-TW/firefox/addon/taiwanesewizard/" target="_blank" onClick="_gaq.push(['_trackEvent', 'button', 'download', 'dl_firefox', 'dl_firefox'])"><span class="icon-firefox">&nbsp;</span> 取得 Firefox 版本</a>
+    <a class="mybtn" href="https://chrome.google.com/webstore/detail/%E5%8F%B0%E8%AA%9E%E5%85%92/kckmkinefemhpfnilhkkipfaofenfoja" target="_blank" onClick="ga('send', 'event', 'button', 'download', 'dl_chrome')"><span class="icon-chrome">&nbsp;</span> 取得 Chrome 版本</a>&nbsp;&nbsp;<a class="mybtn" href="https://addons.mozilla.org/zh-TW/firefox/addon/taiwanesewizard/" target="_blank" onClick="ga('send', 'event', 'button', 'download', 'dl_firefox')"><span class="icon-firefox">&nbsp;</span> 取得 Firefox 版本</a>
   </div>
   <div id="thanks">
     部落格/出版社報導<br /><br />
-    <a href="https://www.facebook.com/briiancom/posts/10155520215265304" target="_blank" onClick="_gaq.push(['_trackEvent', 'button', 'promote', 'pm_briian', 'pm_briian'])"><img src="img/briian.png" /></a> <a href="https://www.facebook.com/permalink.php?story_fbid=798362840262727&id=213452828753734" target="_blank" onClick="_gaq.push(['_trackEvent', 'button', 'promote', 'pm_jenpin', 'pm_jenpin'])"><img src="img/jen-pin.png" /></a>
+    <a href="https://www.facebook.com/briiancom/posts/10155520215265304" target="_blank" onClick="ga('send', 'event', 'button', 'promote', 'pm_briian')"><img src="img/briian.png" /></a> <a href="https://www.facebook.com/permalink.php?story_fbid=798362840262727&id=213452828753734" target="_blank" onClick="ga('send', 'event', 'button', 'promote', 'pm_jenpin')"><img src="img/jen-pin.png" /></a>
   </div>
-  <div id="foot">台語兒<br /><small>TaiwaneseWizard</small><br /><br /><small>Author：<a href="http://baconbao.com" target="_blank">BaconBao</a>&nbsp;&nbsp;|&nbsp;&nbsp;TTS service from：<a href="http://tts.itri.org.tw/" target="_blank">工研院文字轉語音Web服務</a>&nbsp;&nbsp;|&nbsp;&nbsp;Source code: <a href="https://github.com/baconbao/TaiwaneseWizard" target="_blank">Github</a></small></div>
+  <div id="foot">台語兒<br /><small>TaiwaneseWizard</small><br /><br /><small>Author：<a href="http://baconbao.com" target="_blank">BaconBao</a>&nbsp;&nbsp;|&nbsp;&nbsp;TTS service from：<a href="http://tts.itri.org.tw/" target="_blank">工研院文字轉語音Web服務</a>&nbsp;&nbsp;|&nbsp;&nbsp;Source code: <a href="https://github.com/baconbao/TaiwaneseWizard" target="_blank">GitHub</a></small></div>
  </body>
 </html>
