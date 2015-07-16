@@ -5,7 +5,6 @@
 $(document).ready(function(){
 
 	/*--- Page Start ---*/
-	var faceInit = setInterval(faceInitFunc, 5000);	
 	var audioElement = $('#ttsplayer')[0];
 	audioElement.setAttribute('src', 'introduction.wav');
 
@@ -24,7 +23,8 @@ $(document).ready(function(){
 		$("#logo").css('-moz-transform', 'rotateY('+degY+'deg) rotateX('+degX+'deg)');
 		$("#logo").css('-webkit-transform', 'rotateY('+degY+'deg) rotateX('+degX+'deg)');
 	});
-
+	var faceInit = setInterval(faceInitFunc, 5000);
+	
 	/*--- Logo Click to Say ---*/
 	$('#logo').click(function(){
 		clearInterval(faceInit);
