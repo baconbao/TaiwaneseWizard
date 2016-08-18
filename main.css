@@ -82,6 +82,8 @@ body{
   border-right: 20px solid transparent;      
   border-top: 20px solid #fff;
   margin: 0 auto;
+  z-index: 999;
+  position: relative;
 }
 .icon-chrome {
   background: url(img/icon_chrome.png) no-repeat;
