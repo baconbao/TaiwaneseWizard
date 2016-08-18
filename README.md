@@ -9,6 +9,9 @@
 台語兒是一隻會台語朗讀的語音精靈，協助您以台語聆聽網頁的文字，同時也可以是您學習台語的好夥伴喔！
 
 ---------------------------------------
+#### Website: ####
+<http://baconbao.github.io/TaiwaneseWizard/>
+
 #### Author: ####
 BaconBao <http://baconbao.blogspot.com>
 
