@@ -1,20 +1,17 @@
 {
-"version": "1.03",
-"icon": "data/img/TaiwaneseWizard_logo.png",
-"name": "taiwanesewizard",
-"fullName": "台語兒",
-"id": "taiwanesewizard@baconbao",
-"description": "台語兒是一隻台語語音朗讀精靈，協助您用台語聆聽網頁的文字！",
-"homepage": "http://baconbao.blogspot.com",
-"lib": "lib",
-"main": "main",
-"author": "BaconBao",
-"url": "http://baconbao.blogspot.com",
-"license": "MPL 2.0",
-"contributors": [],
-"dependencies": ["api-utils", "addon-kit"],
-"permissions": {
-    "cross-domain-content": ["http://tts.itri.org.tw/php/"]
-}
+	"version": "2.0.3",
+	"icon": "data/img/TaiwaneseWizard_logo.png",
+	"name": "taiwanesewizard",
+	"title": "台語兒",
+	"id": "taiwanesewizard@baconbao",
+	"description": "台語兒是一隻台語語音朗讀精靈，協助您用台語聆聽網頁的文字！",
+	"homepage": "http://baconbao.github.io/TaiwaneseWizard",
+	"main": "index.js",
+	"author": "BaconBao",
+	"license": "MPL 2.0",
+	"dependencies": ["api-utils", "addon-kit"],
+	"permissions": {
+	    "cross-domain-content": ["http://tts.itri.org.tw/php/", "http://twblg.dict.edu.tw/holodict_new/"]
+	}
 }
 
