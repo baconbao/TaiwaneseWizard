@@ -46,6 +46,9 @@
       text-align: center;
       color: #999;
     }
+    #foot small {
+      font-size: 13px !important;
+    }
     #foot a {
       color: #999;
     }
@@ -58,10 +61,64 @@
       padding: 5px;
       cursor: pointer;
       text-decoration: none;
+      font-size: 15px;
     }
     #go2option:hover {
       background: #ccc;
       color: #000;
+    }
+    #select2known {
+      padding-top: 20px;
+      font-size: 16px;
+    }
+    #playDic {
+      border: 1px solid #aaa;
+      padding: 1px 5px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    #click2fix {
+      width: 100%;
+      font-family: 'Microsoft JhengHei','微軟正黑體';
+      font-weight: bold;
+      font-size: 18px;
+    }
+    #text2edit {
+      display: none;
+    }
+    #text2edit textarea {
+      width: 100%;
+      font-size: 27px;
+      font-family: 'Microsoft JhengHei','微軟正黑體';
+    }
+    #nofi {
+      text-align: center;
+      visibility: hidden;
+      color: #777;
+    }
+    #icon_list, #icon_hover {
+      font-size: 15px;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      display: block;
+    }
+    #icon_hover span {
+      border-bottom: 2px dotted #aaa;
+      cursor: pointer;
+    }
+    #icon_list img {
+      width: 18px;
+      opacity: 0.7;
+    }
+    #icon_list img:hover {
+      opacity: 1;
+      width: 19px;
+    }
+    .share_cancel {
+      cursor: pointer;
+    }
+    .opac {
+      opacity: 0.5;
     }
     .arrow-down {
       width: 0; 
@@ -70,16 +127,52 @@
       border-right: 20px solid transparent;      
       border-top: 20px solid #fff;
       margin: 0 auto;
+      z-index: 999;
+      position: relative;
+    }
+    .speak_y {
+      font-weight: bold;
+    }
+    .speak_n {
+      font-weight: bold;
+      border-bottom: 2px dotted #ff6666;
+      text-decoration: none;
+      cursor: pointer;
     }
   </style>
  </head>
  <body>
  	<div id="box" class="ui segment">
  		<div id="text2say"></div>
+    <div id="select2known" class="opac">提醒：選取上方字詞可以查詢與聆聽教育部辭典的讀音。</div>
+    <div id="text2edit">
+      <textarea rows="4"></textarea>
+      <button id="click2fix" class="ui blue button">修　正</button>
+    </div>
  	</div>
   <div class="arrow-down"></div>
-  <div id="logo"><img src="img/faceBackground.png" style="width:100%;" title="聽聽台語兒說說！" /><span id="face">^ _ ^</span></div>
+  <div id="logo"><img src="img/faceBackground.png" style="width:100%;" title="再次聆聽台語兒朗讀！" /><span id="face">^ _ ^</span></div>
+  <div id="nofi"><small>▲ 再次聆聽台語兒朗讀</small></div>
   <audio id="ttsplayer" preload="auto" autoplay></audio>
-  <div id="foot">台語兒 <small><a id="go2option" href="options.html" target="_blank"><i class="setting icon"></i> 設定 </a></small><br /><br /><small>版本：<span id="version"></span>&nbsp;&nbsp;|&nbsp;&nbsp;作者：<a href="http://baconbao.blogspot.com/2010/11/contact-me.html" target="_blank">BaconBao</a>&nbsp;&nbsp;|&nbsp;&nbsp;TTS語音來自：<a href="http://tts.itri.org.tw/" target="_blank">工研院文字轉語音Web服務</a></small></div>
+  <audio id="dicplayer" preload="auto"></audio>
+  <div id="foot">
+    <small>
+      <a id="go2option" href="options.html" target="_blank"><i class="setting icon"></i> 設定 </a></small><br /><br />
+
+      <span id="icon_hover">
+        <span>協助推廣台語兒！</span>
+      </span>
+      <span id="icon_list">
+        <a href="http://www.facebook.com/sharer/sharer.php?u=http://baconbao.github.io/TaiwaneseWizard/" target="_blank"><img src="img/share-icon/facebook.png" /></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/share?url=http://baconbao.github.io/TaiwaneseWizard/" target="_blank"><img src="img/share-icon/twitter.png" /></a>&nbsp;&nbsp;
+        <a href="img/share-icon/qrcode.png" target="_blank"><img src="img/share-icon/line.png" /></a>&nbsp;&nbsp;
+        <a href="http://service.weibo.com/share/share.php?url=http://baconbao.github.io/TaiwaneseWizard/" target="_blank"><img src="img/share-icon/weibo.png" /></a>&nbsp;&nbsp;
+        <a href="img/share-icon/qrcode.png" target="_blank"><img src="img/share-icon/wechat.png" /></a>&nbsp;&nbsp;&nbsp;
+        <img class="share_cancel" src="img/share-icon/cancel.png" />
+      </span>
+
+      <small>台語兒 <a href="http://baconbao.github.io/TaiwaneseWizard/" target="">官網</a>&nbsp;&nbsp;|&nbsp;&nbsp;版本：<span id="version"></span>&nbsp;&nbsp;|&nbsp;&nbsp;作者：<a href="http://baconbao.blogspot.com/2010/11/contact-me.html" target="_blank">BaconBao</a>&nbsp;&nbsp;|&nbsp;&nbsp;TTS語音來自：<a href="http://tts.itri.org.tw/" target="_blank">工研院文字轉語音Web服務</a>
+    </small>
+  </div>
  </body>
 </html>
