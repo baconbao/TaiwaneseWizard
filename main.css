@@ -34,6 +34,7 @@ body{
   margin-top: 20px;
   text-align: center;
   color: #999;
+  margin-bottom: 20px;
 }
 #foot a {
   color: #999;
@@ -70,10 +71,22 @@ body{
   cursor: pointer;
   text-decoration: none;
 }
-.mybtn:hover {
+.mybtn:hover, .mybtn-full:hover {
   background: #ccc;
   color: #000;
   border: 1px solid #333;
+}
+.mybtn-full {
+  display: block;
+  width: 356px;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 .arrow-down {
   width: 0; 
@@ -96,6 +109,15 @@ body{
 }
 .icon-firefox {
   background: url(img/icon_firefox.png) no-repeat;
+  background-position: center center;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  text-indent: -10000px;
+  opacity: 0.9;
+}
+.icon-android {
+  background: url(img/icon_android.png) no-repeat;
   background-position: center center;
   width: 25px;
   height: 25px;
