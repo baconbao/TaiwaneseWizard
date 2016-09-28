@@ -90,6 +90,10 @@ body{
   margin-bottom: 25px;
   font-weight: bold;
 }
+.fix_margin {
+  margin-top: -15px;
+  margin-bottom: 25px;
+}
 .arrow-down {
   width: 0; 
   height: 0; 
@@ -127,6 +131,15 @@ body{
   text-indent: -10000px;
   opacity: 0.9;
 }
+.icon-messenger {
+  background: url(img/icon_messenger.png) no-repeat;
+  background-position: center center;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  text-indent: -10000px;
+  opacity: 0.9;
+}
 .new {
   color: #F50E6B;
   font-weight: normal;
@@ -144,5 +157,9 @@ body{
   .mybtn-full {
     width: 100%;
     padding: 15px 0px;
+  }
+  .fix_margin {
+    margin-top: 20px;
+    margin-bottom: 25px;    
   }
 }
