@@ -37,7 +37,7 @@ body{
   margin-bottom: 20px;
 }
 #foot a {
-  color: #999;
+  color: #aaa;
 }
 #foot a:hover {
   color: #000;
@@ -63,6 +63,13 @@ body{
 }
 #thanks img:hover {
   opacity: 1;
+}
+#gofacebook {
+  opacity: 0.25;
+  width: 30px;
+}
+#gofacebook:hover {
+  opacity: 0.4;
 }
 .mybtn {
   border: 1px solid;
