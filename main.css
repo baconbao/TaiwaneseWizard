@@ -153,6 +153,16 @@ body{
   color: #F50E6B;
   font-weight: normal;
 }
+#notify {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Microsoft JhengHei','微軟正黑體';
+}
+#notify .paper {
+  max-width: 400px;
+  margin: 0 auto;
+}
 @media only screen and (max-width:750px) {
   body {
     padding-left: 15px;
