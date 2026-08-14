@@ -1,3 +1,5 @@
+
+
 # 台語兒 TaiwaneseWizard
 
 ![台語兒](http://2.bp.blogspot.com/-90nYQv7Yack/UsAfkPZTlRI/AAAAAAAACNc/NzOAu4_Baq0/s300/github.png)
@@ -23,3 +25,6 @@ BaconBao
 
 #### TTS Service by: ####
 工研院文字轉語音Web服務 <http://tts.itri.org.tw>
+
+#### License: ####
+MPL 2.0
